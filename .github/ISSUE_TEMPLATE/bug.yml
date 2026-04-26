@@ -1,0 +1,24 @@
+name: "Bug"
+description: "Report a bug found during experiments"
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      placeholder: "e.g. jpa:dirty-checking"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduce steps
+    validations:
+      required: true

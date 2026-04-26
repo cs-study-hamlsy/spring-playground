@@ -1,0 +1,26 @@
+name: "Experiment"
+description: "Register a new experiment topic"
+title: "[EXP] "
+labels: ["experiment"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: "e.g. JPA Dirty Checking"
+    validations:
+      required: true
+  - type: input
+    id: module-path
+    attributes:
+      label: Module path
+      placeholder: "e.g. jpa:dirty-checking"
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      placeholder: "What do you expect?"
+    validations:
+      required: true
